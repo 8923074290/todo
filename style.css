@@ -1,0 +1,116 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url(back1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+header{
+position: sticky;
+width: 100%;
+top: 0;
+z-index: 1;
+background: transparent;
+}
+header .container{
+  height: 10vh;
+  width: 100px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+.logo{
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.logo img{
+  height: 35px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.logo p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: 500px;
+  cursor: default;
+  color:black;
+  font-weight: bold;
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+ 
+ul{
+list-style: none;
+gap: 14px;
+display: flex;
+}
+li{
+  font-size: 20px;
+}
+nav{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 14px;
+}
+.main{
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+}
+.main img{
+  background-image: url(back.jpg);
+  display: block;
+  margin: auto;
+  height: 100%;
+  filter: drop-shadow(20px 20px 40px Black);
+}
+.content{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.content .container{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: auto;
+  height: 100%;
+}
+.todo1{
+  display: inline-block;
+  
+}
+ .todo1 .todo_value{
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  flex-grow: 1;
+  border-bottom: 2px solid brown;
+  cursor: inherit;
+}
+.todobox{
+cursor: inherit;
+}
+.todo:has(.todobox:checked){
+  color: brown;
+  background-color: black;
+  text-decoration: line-through 1.5px;
+  order: 1;
+}
